@@ -1,4 +1,4 @@
-# archer
+# minimal-arch
 
 These are my scripts for a minimal [Arch Linux](https://www.archlinux.org) installation on a 64-bit system. A configuration file allows you to specify hard drive, space for EFI and swap partitions, hostname, username, password, timezone, and locale. The scripts then wipe the drive, create new partitions, and configure the OS according to your settings.
 
@@ -17,9 +17,9 @@ iwctl station wlan0 connect $ssid -P $pass
 At this point you need to retrieve the installation scripts. Use `curl` to download them from this repository:
 
 ```sh
-curl -O https://raw.githubusercontent.com/piazzai/archer/master/arch.conf
-curl -O https://raw.githubusercontent.com/piazzai/archer/master/install.sh
-curl -O https://raw.githubusercontent.com/piazzai/archer/master/setup.sh
+curl -O https://raw.githubusercontent.com/piazzai/minimal-arch/master/arch.conf
+curl -O https://raw.githubusercontent.com/piazzai/minimal-arch/master/install.sh
+curl -O https://raw.githubusercontent.com/piazzai/minimal-arch/master/setup.sh
 ```
 
 Use [nano](https://man.archlinux.org/man/nano) to open `arch.conf` and edit it according to your needs. Then, type `bash install.sh` to start the installation process. The script will prompt a reboot at the end of the process, allowing you to disconnect the installation medium and boot into your new OS as a [sudo](https://man.archlinux.org/man/sudo) user.
